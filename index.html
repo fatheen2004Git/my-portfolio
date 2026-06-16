@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatheen | Premium Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <h1 class="glitch-text" data-text="FATHEEN">FATHEEN</h1>
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+            <div class="loading-percent">0%</div>
+        </div>
+    </div>
+
+    <!-- Canvas Background for Particles -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="glass">
+        <div class="nav-container">
+            <div class="logo">Fatheen<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="magnetic active">Home</a></li>
+                <li><a href="about.html" class="magnetic">About</a></li>
+                <li><a href="experience.html" class="magnetic">Experience</a></li>
+                <li><a href="projects.html" class="magnetic">Projects</a></li>
+                <li><a href="contact.html" class="magnetic">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <h1 class="hero-title reveal-text">Mohammed Fatheen Faizal Fazly</h1>
+                <div class="rotating-text-wrapper reveal-text delay-1">
+                    <span class="rotating-text">Software Engineer</span>
+                </div>
+                <p class="hero-description reveal-text delay-2">
+                    Passionate about building digital experiences,<br>
+                    developing innovative software solutions,<br>
+                    and creating impactful technology-driven projects.
+                </p>
+                <div class="hero-cta reveal-text delay-3">
+                    <a href="cv.html" class="btn btn-primary magnetic">View CV</a>
+                    <a href="resume.html" class="btn btn-secondary magnetic glow-btn">View Resume</a>
+                    <a href="#projects" class="btn btn-secondary magnetic">Explore Projects</a>
+                </div>
+                <div class="hero-social reveal-text delay-4">
+                    <a href="https://linkedin.com/in/fatheenfazly04" target="_blank" class="social-icon magnetic" title="LinkedIn">LI</a>
+                    <a href="mailto:m.fatheenfazly2004@gmail.com" class="social-icon magnetic" title="Email">EM</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal-image">
+                <div class="hero-image-glow"></div>
+                <img src="profile.jpg" alt="Fatheen Profile" class="hero-image parallax-img">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <h2 class="section-title reveal-text">About <span class="gradient-text">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-card glass reveal-up">
+                    <div class="card-icon">🎓</div>
+                    <h3>Education</h3>
+                    <ul>
+                        <li>BEng (Hons) Software Engineering (Reading)</li>
+                        <li>Pearson BTEC HND Computing</li>
+                        <li>Diploma in Business Management (DiBM)</li>
+                        <li>Diploma in IT (DiTEC)</li>
+                        <li>Diploma in English (DiE)</li>
+                    </ul>
+                    <a href="about.html#education" style="color: var(--c5); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-top: 1rem; font-weight: 600;">View All 16 Qualifications ➔</a>
+                </div>
+                <div class="about-card glass reveal-up delay-1">
+                    <div class="card-icon">🌍</div>
+                    <h3>Languages</h3>
+                    <div class="language-tags">
+                        <span>Tamil (Native)</span>
+                        <span>Sinhala (Native)</span>
+                        <span>English (Intermediate)</span>
+                        <span>Hindi (Basic)</span>
+                        <span>Japanese (Beginner)</span>
+                    </div>
+                </div>
+                <div class="about-card glass reveal-up delay-2">
+                    <div class="card-icon">💼</div>
+                    <h3>Experience Highlights</h3>
+                    <ul>
+                        <li>Public Relations Director - Student Council</li>
+                        <li>Home Tutor - IT Basics</li>
+                        <li>Freelance Photo Editor</li>
+                    </ul>
+                    <a href="experience.html" style="color: var(--c5); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-top: 1rem; font-weight: 600;">View Experience Details ➔</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <h2 class="section-title reveal-text">Core <span class="gradient-text">Skills</span></h2>
+            <div class="skills-container">
+                <div class="skill-category glass reveal-up">
+                    <h3>Programming</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><span>C++</span><div class="progress-bar"><div class="progress" data-width="85%"></div></div></div>
+                        <div class="skill-item"><span>C#</span><div class="progress-bar"><div class="progress" data-width="80%"></div></div></div>
+                        <div class="skill-item"><span>Python</span><div class="progress-bar"><div class="progress" data-width="90%"></div></div></div>
+                        <div class="skill-item"><span>PHP</span><div class="progress-bar"><div class="progress" data-width="75%"></div></div></div>
+                        <div class="skill-item"><span>JavaScript</span><div class="progress-bar"><div class="progress" data-width="95%"></div></div></div>
+                        <div class="skill-item"><span>HTML</span><div class="progress-bar"><div class="progress" data-width="98%"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category glass reveal-up delay-1">
+                    <h3>Development & Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><span>Visual Studio</span><div class="progress-bar"><div class="progress" data-width="90%"></div></div></div>
+                        <div class="skill-item"><span>VS Code</span><div class="progress-bar"><div class="progress" data-width="95%"></div></div></div>
+                        <div class="skill-item"><span>MySQL</span><div class="progress-bar"><div class="progress" data-width="85%"></div></div></div>
+                        <div class="skill-item"><span>XAMPP</span><div class="progress-bar"><div class="progress" data-width="90%"></div></div></div>
+                        <div class="skill-item"><span>Microsoft Office (Word, Excel, PowerPoint)</span><div class="progress-bar"><div class="progress" data-width="90%"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category glass reveal-up delay-2">
+                    <h3>Creative, Interpersonal & Professional</h3>
+                    <div class="skill-tags">
+                        <span class="glowing-tag">Photo Editing & Media Production</span>
+                        <span class="glowing-tag">Digital Design & Content Creation</span>
+                        <span class="glowing-tag">Multimedia Portfolio Development</span>
+                        <span class="glowing-tag">Team Collaboration & Coordination</span>
+                        <span class="glowing-tag">Leadership & Project Management</span>
+                        <span class="glowing-tag">Public Speaking & Communication</span>
+                        <span class="glowing-tag">Student Mentorship & Support</span>
+                        <span class="glowing-tag">Time & Resource Management</span>
+                        <span class="glowing-tag">Critical Thinking & Problem Solving</span>
+                        <span class="glowing-tag">Adaptability in Dynamic Environments</span>
+                        <span class="glowing-tag">Teaching & Instructional Techniques</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <h2 class="section-title reveal-text">Featured <span class="gradient-text">Projects</span></h2>
+            <div class="project-list">
+                <div class="project-card glass reveal-up">
+                    <div class="project-image" style="background: linear-gradient(135deg, #471CA8, #884AB2);">
+                        <span>Web Project</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Website Development & UX/UI Design Projects</h3>
+                        <p>Designed and developed responsive websites with a strong focus on usability, accessibility, and user experience. Implemented database functionality using MySQL and C#.</p>
+                        <div class="project-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>C#</span><span>MySQL</span><span>XAMPP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects.html" class="btn btn-primary magnetic">View Projects</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass reveal-up">
+                    <div class="project-image" style="background: linear-gradient(135deg, #D1105A, #F24B04);">
+                        <span>Media Project</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Digital Media Portfolio</h3>
+                        <p>Developed a comprehensive digital portfolio showcasing freelance photo editing, graphic design, and creative media projects showing before/after transitions.</p>
+                        <div class="project-tech">
+                            <span>Photo Editing</span><span>Graphic Design</span><span>AI Tools</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects.html" class="btn btn-primary magnetic">View Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="timeline section">
+            <h2 class="section-title reveal-text">My <span class="gradient-text">Journey</span></h2>
+            <div class="timeline-container">
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2010–2020</span>
+                        <h3>School Education</h3>
+                        <p>Completed School Education at St. John’s College, Colombo 09. Subject focus includes Commerce, IT, and Art.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2019–Present</span>
+                        <h3>Freelance Photo Editor</h3>
+                        <p>Self-employed. Specializing in high-quality visual content, marketing materials, and digital design.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2016–2018</span>
+                        <h3>Certificate in Maʿāriful Wahy</h3>
+                        <p>Understanding Divine Revelation at Shabeer-ul Rashad Masjid (ACJU). Awarded Best Performer.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2019</span>
+                        <h3>Certificate in Computer Basics</h3>
+                        <p>Completed at Younger Men's Muslim Association (YMMA), Colombo 10.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2022–2023</span>
+                        <h3>IT & Language Diplomas</h3>
+                        <p>Completed Certificate in IT, Diploma in IT (Pearson Assured), Diploma in English, and Certificate in Computer Graphics.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2023–2024</span>
+                        <h3>HND Computing & Media Certs</h3>
+                        <p>Completed Pearson BTEC Higher National Diploma (HND) in Computing (Software Engineering pathway) alongside Certificates in Media and Journalism.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2022–2024</span>
+                        <h3>Home Tutor - IT Basics</h3>
+                        <p>Providing one-to-one instructional tutoring sessions covering fundamental IT concepts for school students.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2024–2025</span>
+                        <h3>Public Relations Director - Student Council</h3>
+                        <p>Served as Student Council PR Director at ESOFT Metro Campus, Bambalapitiya. Coordinated student engagement and events.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2025–2026</span>
+                        <h3>Business Management & IT Certs</h3>
+                        <p>Completed Certificate in IT (CiIT) and Diploma in Business Management (DiBM) at ESOFT Metro Campus.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <span class="timeline-date">2026–Present</span>
+                        <h3>BEng Software Engineering & Online Diplomas</h3>
+                        <p>Reading for BEng (Hons) Software Engineering at ESOFT Metro Campus (affiliated with London Metropolitan University). Simultaneously reading for Alison Diplomas in Psychology and Human Resources.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements section">
+            <div class="stats-grid">
+                <div class="stat-card glass reveal-up">
+                    <div class="stat-number counter" data-target="16">0</div>
+                    <div class="stat-label">Qualifications</div>
+                </div>
+                <div class="stat-card glass reveal-up delay-1">
+                    <div class="stat-number counter" data-target="25">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card glass reveal-up delay-2">
+                    <div class="stat-number counter" data-target="7">0</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                <div class="stat-card glass reveal-up delay-3">
+                    <div class="stat-number counter" data-target="5">0</div>
+                    <div class="stat-label">Languages Spoken</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials section">
+            <h2 class="section-title reveal-text">Client <span class="gradient-text">Feedback</span></h2>
+            <div class="testimonial-slider glass reveal-up">
+                <div class="testimonial-content">
+                    <p class="quote">"Fatheen's work is simply outstanding. The attention to detail and performance optimization is world-class."</p>
+                    <div class="author">- Jane Doe, Tech Lead</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <h2 class="section-title reveal-text">Let's <span class="gradient-text">Connect</span></h2>
+            <div class="contact-container">
+                <div class="contact-info glass reveal-up">
+                    <h3>Contact Details</h3>
+                    <p>Ready to build the future? Reach out to me.</p>
+                    <div class="info-item"><span>📍</span> Colombo, Sri Lanka</div>
+                    <div class="info-item"><span>📞</span> +94 71 228 4555</div>
+                    <div class="info-item"><span>✉️</span> <a href="mailto:m.fatheenfazly2004@gmail.com" style="color: inherit; text-decoration: none;">m.fatheenfazly2004@gmail.com</a></div>
+                    <div class="info-item"><span>💼</span> <a href="https://linkedin.com/in/fatheenfazly04" target="_blank" style="color: inherit; text-decoration: none;">linkedin.com/in/fatheenfazly04</a></div>
+                </div>
+                <form class="contact-form glass reveal-up delay-1" onsubmit="event.preventDefault();">
+                    <div class="input-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary magnetic glow-btn" style="width:100%">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Mohammed Fatheen Faizal Fazly</h2>
+                <p>"Building the future through technology and creativity."</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <h3>Social Media</h3>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Fatheen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

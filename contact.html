@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Fatheen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Global Navigation -->
+    <nav id="navbar" class="glass">
+        <div class="nav-container">
+            <div class="logo"><a href="index.html" style="color:inherit; text-decoration:none;">Fatheen<span class="dot">.</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="magnetic">Home</a></li>
+                <li><a href="about.html" class="magnetic">About</a></li>
+                <li><a href="experience.html" class="magnetic">Experience</a></li>
+                <li><a href="projects.html" class="magnetic">Projects</a></li>
+                <li><a href="contact.html" class="magnetic active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO SECTION -->
+    <header class="hero-section" id="hero">
+        <canvas id="heroCanvas"></canvas>
+        <div class="gradient-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </div>
+        <div class="hero-content container text-center">
+            <h1 class="hero-title reveal-up">Let's <span class="gradient-text">Connect</span></h1>
+            
+            <div class="rotating-text-wrapper reveal-up delay-1">
+                <h2>I'm passionate about <span class="rotating-text">Software Engineering</span></h2>
+            </div>
+            
+            <p class="hero-desc reveal-up delay-2">
+                Whether you're looking for a developer, collaborator, mentor, student tutor, creative professional, or simply want to connect, I'd love to hear from you.
+            </p>
+        </div>
+        <div class="scroll-indicator reveal-up delay-3">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </header>
+
+    <!-- SECTION 2: CONTACT CARDS SECTION -->
+    <section class="cards-section section">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <div class="contact-card glass tilt-card reveal-up">
+                    <div class="card-icon">📞</div>
+                    <h3>Phone</h3>
+                    <p>+94 71 228 4555</p>
+                    <a href="tel:+94712284555" class="btn btn-secondary magnetic glow-on-hover">Call Now</a>
+                </div>
+
+                <div class="contact-card glass tilt-card reveal-up delay-1">
+                    <div class="card-icon" style="color: var(--c3);">✉️</div>
+                    <h3>Email</h3>
+                    <p>m.fatheenfazly2004@gmail.com</p>
+                    <a href="mailto:m.fatheenfazly2004@gmail.com" class="btn btn-secondary magnetic glow-on-hover">Send Email</a>
+                </div>
+
+                <div class="contact-card glass tilt-card reveal-up delay-2">
+                    <div class="card-icon" style="color: var(--c2);">🔗</div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/fatheenfazly04</p>
+                    <a href="https://linkedin.com/in/fatheenfazly04" target="_blank" class="btn btn-secondary magnetic glow-on-hover">View Profile</a>
+                </div>
+
+                <div class="contact-card glass tilt-card reveal-up delay-3">
+                    <div class="card-icon" style="color: var(--c5);">📍</div>
+                    <h3>Address</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.5; min-height: 54px;">Colombo, Sri Lanka</p>
+                    <a href="https://maps.google.com/?q=Colombo,+Sri+Lanka" target="_blank" class="btn btn-secondary magnetic glow-on-hover">View Map</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: CONTACT FORM -->
+    <section class="form-section section">
+        <div class="container">
+            <div class="form-wrapper glass reveal-up">
+                <h2 class="section-title text-left">Send a <span class="gradient-text">Message</span></h2>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="fullName" required>
+                        <label for="fullName">Full Name</label>
+                        <div class="focus-border"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="emailAddr" required>
+                        <label for="emailAddr">Email Address</label>
+                        <div class="focus-border"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="subject" required>
+                        <label for="subject">Subject</label>
+                        <div class="focus-border"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" rows="5" required></textarea>
+                        <label for="message">Message</label>
+                        <div class="focus-border"></div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary magnetic glow-btn" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="spinner"></span>
+                        </button>
+                    </div>
+                    
+                    <div class="form-status" id="formStatus">
+                        <span class="status-icon">✓</span> Message sent successfully!
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: WHY CONTACT ME -->
+    <section class="why-section section">
+        <div class="container">
+            <h2 class="section-title reveal-up">Why <span class="gradient-text">Contact Me</span></h2>
+            <div class="why-grid">
+                <div class="why-card glass reveal-up">
+                    <div class="why-icon">💻</div>
+                    <h3>Software Development</h3>
+                    <ul>
+                        <li>Custom websites</li>
+                        <li>Web applications</li>
+                        <li>Technical solutions</li>
+                    </ul>
+                </div>
+                <div class="why-card glass reveal-up delay-1">
+                    <div class="why-icon">📚</div>
+                    <h3>Tutoring & Education</h3>
+                    <ul>
+                        <li>IT tutoring</li>
+                        <li>Academic guidance</li>
+                        <li>Technology learning support</li>
+                    </ul>
+                </div>
+                <div class="why-card glass reveal-up delay-2">
+                    <div class="why-icon">🎨</div>
+                    <h3>Creative Media</h3>
+                    <ul>
+                        <li>Photo editing</li>
+                        <li>Digital content</li>
+                        <li>Visual branding</li>
+                    </ul>
+                </div>
+                <div class="why-card glass reveal-up delay-3">
+                    <div class="why-icon">🤝</div>
+                    <h3>Leadership & Collaboration</h3>
+                    <ul>
+                        <li>Student initiatives</li>
+                        <li>Events & Projects</li>
+                        <li>Teamwork</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: SOCIAL NETWORK & 6: AVAILABILITY -->
+    <section class="social-avail-section section">
+        <div class="container dual-grid">
+            
+            <div class="social-box glass reveal-up">
+                <h3 class="box-title">Social <span class="gradient-text">Network</span></h3>
+                <div class="social-icons">
+                    <a href="#" class="s-icon" data-name="LinkedIn">in</a>
+                    <a href="#" class="s-icon" data-name="GitHub">gh</a>
+                    <a href="#" class="s-icon" data-name="Email">@</a>
+                    <a href="#" class="s-icon" data-name="Portfolio">pf</a>
+                </div>
+            </div>
+
+            <div class="avail-box glass reveal-up delay-1">
+                <h3 class="box-title">Currently <span class="gradient-text">Available For</span></h3>
+                <div class="badges">
+                    <span class="badge">Freelance Projects</span>
+                    <span class="badge">Internships</span>
+                    <span class="badge">Software Engineering Opportunities</span>
+                    <span class="badge">Collaboration Projects</span>
+                    <span class="badge">Tutoring Opportunities</span>
+                    <span class="badge">Technology Events</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 7: FAQ SECTION -->
+    <section class="faq-section section">
+        <div class="container">
+            <h2 class="section-title reveal-up">Frequently Asked <span class="gradient-text">Questions</span></h2>
+            <div class="faq-container reveal-up delay-1">
+                
+                <div class="faq-item glass">
+                    <div class="faq-header">
+                        <h4>How quickly do you respond?</h4>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-body">
+                        <p>I typically respond to all inquiries within 24 to 48 hours during standard business days.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <div class="faq-header">
+                        <h4>What services do you offer?</h4>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-body">
+                        <p>I offer full-stack web development, professional photo editing, branding, and IT tutoring services.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <div class="faq-header">
+                        <h4>Are you available for internships?</h4>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-body">
+                        <p>Yes, I am actively seeking software engineering and development internship opportunities.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <div class="faq-header">
+                        <h4>Can you collaborate on projects?</h4>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-body">
+                        <p>Absolutely. I believe in the power of teamwork and am always open to exciting collaboration projects.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item glass">
+                    <div class="faq-header">
+                        <h4>Do you provide tutoring?</h4>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-body">
+                        <p>Yes, I provide one-on-one IT tutoring covering computing basics and digital literacy.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: WORLD MAP SECTION -->
+    <section class="map-section section">
+        <div class="container text-center reveal-up">
+            <h2 class="section-title">Global <span class="gradient-text">Reach</span></h2>
+            <div class="map-wrapper">
+                <div class="map-bg"></div>
+                <!-- Colombo Pin -->
+                <div class="map-pin">
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring delay"></div>
+                    <div class="pin-dot"></div>
+                    <span class="pin-label">Colombo, Sri Lanka</span>
+                </div>
+            </div>
+            <div class="map-tags">
+                <span class="map-tag glass">🌍 Open to Remote Opportunities</span>
+                <span class="map-tag glass">🤝 Open to International Collaboration</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8.5: REFERENCES & DECLARATION -->
+    <section class="references-section section" id="references" style="padding-top: 4rem;">
+        <div class="container">
+            <h2 class="section-title reveal-up">Professional <span class="gradient-text">References</span></h2>
+            <div class="references-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 5rem;">
+                <!-- Ref 1 -->
+                <div class="contact-card glass reveal-up" style="padding: 2.5rem; border-radius: 20px; border-left: 4px solid var(--c1); text-align: center;">
+                    <div class="card-icon" style="font-size: 2.5rem; margin-bottom: 1rem;">👨‍🏫</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Mr. Rajitha Jayasekara</h3>
+                    <p style="color: var(--c5); font-weight: 600; font-size: 0.95rem; text-transform: uppercase; margin-bottom: 1rem;">Lecturer – Information Technology</p>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1rem;">ESOFT Metro Campus</p>
+                    <a href="mailto:rajithagayan@esoft.lk" class="btn btn-secondary magnetic" style="padding: 0.6rem 1.5rem; font-size: 0.8rem; border-radius: 20px;">Email Referee</a>
+                </div>
+                <!-- Ref 2 -->
+                <div class="contact-card glass reveal-up delay-1" style="padding: 2.5rem; border-radius: 20px; border-left: 4px solid var(--c3); text-align: center;">
+                    <div class="card-icon" style="font-size: 2.5rem; margin-bottom: 1rem;">👩‍🏫</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Ms. Anne Sumudu</h3>
+                    <p style="color: var(--c5); font-weight: 600; font-size: 0.95rem; text-transform: uppercase; margin-bottom: 1rem;">Senior Lecturer – Information Technology</p>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1rem;">ESOFT UNI</p>
+                    <a href="mailto:anne@esu.lk" class="btn btn-secondary magnetic" style="padding: 0.6rem 1.5rem; font-size: 0.8rem; border-radius: 20px;">Email Referee</a>
+                </div>
+                <!-- Ref 3 -->
+                <div class="contact-card glass reveal-up delay-2" style="padding: 2.5rem; border-radius: 20px; border-left: 4px solid var(--c2); text-align: center;">
+                    <div class="card-icon" style="font-size: 2.5rem; margin-bottom: 1rem;">🔗</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Ms. Chathuni Jayaweera</h3>
+                    <p style="color: var(--c5); font-weight: 600; font-size: 0.95rem; text-transform: uppercase; margin-bottom: 1rem;">Lecturer – English</p>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1rem;">CINEC Campus</p>
+                    <a href="https://linkedin.com/in/chathuni-jayaweera-9a47a6111" target="_blank" class="btn btn-secondary magnetic" style="padding: 0.6rem 1.5rem; font-size: 0.8rem; border-radius: 20px;">LinkedIn Profile</a>
+                </div>
+            </div>
+
+            <!-- DECLARATION -->
+            <div class="declaration-block glass reveal-up" style="padding: 4rem 3rem; border-radius: 24px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.08); background: rgba(255, 255, 255, 0.01); margin-top: 4rem;">
+                <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--text-main); font-weight: 800; letter-spacing: 1px;">Declaration</h3>
+                <p style="font-size: 1.3rem; font-style: italic; color: var(--text-muted); max-width: 800px; margin: 0 auto 3rem; line-height: 1.8;">
+                    "I hereby declare that the information provided above is true, accurate, and complete to the best of my knowledge and belief."
+                </p>
+                <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 2rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 2rem;">
+                    <div>
+                        <span style="color: var(--c5); font-size: 0.9rem; text-transform: uppercase; display: block; margin-bottom: 0.5rem; font-weight: 600; letter-spacing: 1px;">Candidate Name</span>
+                        <p style="font-size: 1.2rem; font-weight: bold; color: var(--text-main);">Mohammed Fatheen Faizal Fazly</p>
+                    </div>
+                    <div>
+                        <span style="color: var(--c5); font-size: 0.9rem; text-transform: uppercase; display: block; margin-bottom: 0.5rem; font-weight: 600; letter-spacing: 1px;">Date</span>
+                        <p style="font-size: 1.2rem; font-weight: bold; color: var(--text-main);"><span id="declaration-date">June 16, 2026</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: FINAL CALL TO ACTION -->
+    <section class="final-cta section">
+        <div class="container text-center reveal-up">
+            <h2 class="cta-headline">Ready to Create Something <span class="gradient-text">Amazing?</span></h2>
+            <p class="cta-desc">Let's turn ideas into reality through technology, creativity, and innovation.</p>
+            <div class="cta-buttons">
+                <a href="#hero" class="btn btn-primary magnetic glow-btn">Send a Message</a>
+                <a href="#" class="btn btn-secondary magnetic">Download CV</a>
+                <a href="index.html" class="btn btn-secondary magnetic">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: FOOTER -->
+    <footer class="glass">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Mohammed Fatheen Faizal Fazly</h3>
+                    <p>Building the future through technology and creativity.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Social Links</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Mohammed Fatheen Faizal Fazly. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae | Mohammed Fatheen Faizal Fazly</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="cv-body-page">
+
+    <!-- Global Navigation (Hidden on print) -->
+    <nav id="navbar" class="glass no-print">
+        <div class="nav-container">
+            <div class="logo"><a href="index.html" style="color:inherit; text-decoration:none;">Fatheen<span class="dot">.</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="magnetic">Home</a></li>
+                <li><a href="about.html" class="magnetic">About</a></li>
+                <li><a href="experience.html" class="magnetic">Experience</a></li>
+                <li><a href="projects.html" class="magnetic">Projects</a></li>
+                <li><a href="contact.html" class="magnetic">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Actions Panel (Hidden on print) -->
+    <div class="cv-actions no-print">
+        <div class="cv-controls-wrapper">
+            <div class="cv-control-group">
+                <label for="themeSelect">Template:</label>
+                <select id="themeSelect" class="cv-select">
+                    <option value="theme-modern" selected>Modern Accent</option>
+                    <option value="theme-classic">Classic Corporate</option>
+                    <option value="theme-minimal">Minimalist Slate</option>
+                    <option value="theme-emerald">Emerald Professional</option>
+                    <option value="theme-vintage">Vintage Editorial</option>
+                    <option value="theme-navy">Royal Navy</option>
+                    <option value="theme-amber">Amber Warmth</option>
+                    <option value="theme-teal">Teal Creative</option>
+                    <option value="theme-crimson">Crimson Bold</option>
+                    <option value="theme-charcoal">Charcoal Clean</option>
+                    <option value="theme-cyberpunk">Cyberpunk Tech</option>
+                    <option value="theme-gold">Executive Gold</option>
+                    <option value="theme-swiss">Swiss Typographer</option>
+                    <option value="theme-oak">Warm Oak</option>
+                    <option value="theme-metro">Metro Matrix</option>
+                </select>
+            </div>
+            <div class="cv-control-group">
+                <label for="layoutSelect">Layout:</label>
+                <select id="layoutSelect" class="cv-select">
+                    <option value="layout-left-sidebar" selected>Left Sidebar</option>
+                    <option value="layout-right-sidebar">Right Sidebar</option>
+                    <option value="layout-single-column">Single Column Flow</option>
+                </select>
+            </div>
+            <div class="cv-control-group">
+                <label for="colorPicker">Accent:</label>
+                <input type="color" id="colorPicker" class="cv-color-picker" value="#471CA8">
+            </div>
+            <div class="cv-control-group">
+                <label class="cv-checkbox-container">
+                    <input type="checkbox" id="profileToggle" checked>
+                    <span class="checkmark"></span>
+                    Show Photo
+                </label>
+            </div>
+        </div>
+        <div class="cv-action-buttons">
+            <button id="printBtn" class="btn btn-primary magnetic"><span class="icon">🖨️</span> Print CV / Save as PDF</button>
+            <a href="resume.html" class="btn btn-secondary magnetic">View Resume</a>
+            <a href="index.html" class="btn btn-secondary magnetic">Back to Home</a>
+        </div>
+    </div>
+
+    <!-- CV Document Wrapper -->
+    <div class="cv-document-container">
+        
+        <!-- PAGE 1 -->
+        <div class="cv-page-sheet" id="page-1">
+            <div class="cv-header">
+                <div class="cv-title-block">
+                    <h1>Mohammed Fatheen Faizal Fazly</h1>
+                    <div class="cv-subtitle">Software Engineer</div>
+                </div>
+                <div class="cv-contact-info">
+                    <div><strong>Email:</strong> m.fatheenfazly2004@gmail.com</div>
+                    <div><strong>Phone:</strong> +94 71 228 4555</div>
+                    <div><strong>LinkedIn:</strong> linkedin.com/in/fatheenfazly04</div>
+                    <div><strong>Address:</strong> Colombo 10, Sri Lanka</div>
+                </div>
+            </div>
+
+            <hr class="cv-divider">
+
+            <div class="cv-grid">
+                <!-- Left Column (Sidebar-like details) -->
+                <div class="cv-sidebar">
+                    <div class="cv-profile-img-container">
+                        <img class="cv-profile-pic" src="profile.jpg" alt="Mohammed Fatheen Faizal Fazly">
+                    </div>
+                    <div class="cv-section">
+                        <h2>Personal Details</h2>
+                        <ul class="cv-details-list">
+                            <li><strong>Preferred Name:</strong> Fatheen</li>
+                            <li><strong>Date of Birth:</strong> 29 February 2004</li>
+                            <li><strong>Gender:</strong> Male</li>
+                            <li><strong>Nationality:</strong> Sri Lankan</li>
+                            <li><strong>Address:</strong> Colombo, Sri Lanka</li>
+                        </ul>
+                    </div>
+
+                    <div class="cv-section">
+                        <h2>Key Skills</h2>
+                        <ul class="cv-skills-list">
+                            <li>C++ & C#</li>
+                            <li>Python & PHP</li>
+                            <li>JavaScript & MySQL</li>
+                            <li>HTML5 & CSS3</li>
+                            <li>XAMPP Environment</li>
+                            <li>MS Office Suite</li>
+                            <li>UX/UI Design</li>
+                            <li>Digital Media Production</li>
+                        </ul>
+                    </div>
+
+                    <div class="cv-section">
+                        <h2>Languages</h2>
+                        <ul class="cv-languages-list">
+                            <li>Tamil (Native)</li>
+                            <li>Sinhala (Native)</li>
+                            <li>English (Intermediate)</li>
+                            <li>Hindi (Basic)</li>
+                            <li>Japanese (Beginner)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Column (Core Details) -->
+                <div class="cv-main-content">
+                    <div class="cv-section">
+                        <h2>Professional Summary</h2>
+                        <p class="summary-text">
+                            Motivated and adaptable Information Technology student with experience in web development, digital media, tutoring, and student leadership. Skilled in programming, database management, content creation, communication, and project coordination. Seeking an opportunity to contribute technical, creative, and interpersonal strengths in a professional environment while continuing to develop industry experience.
+                        </p>
+                    </div>
+
+                    <div class="cv-section">
+                        <h2>Education Spotlight (16 Qualifications)</h2>
+                        <div class="cv-education-grid">
+                            <div class="cv-edu-item reading">
+                                <h3>BEng (Hons) Software Engineering (Top-Up) – Reading</h3>
+                                <p class="edu-meta">2026 – Present | ESOFT Metro Campus, Colombo (Affiliated with London Metropolitan University, UK)</p>
+                            </div>
+                            <div class="cv-edu-item reading">
+                                <h3>Diploma in Psychology – Reading</h3>
+                                <p class="edu-meta">2026 – Present | Alison (CPD Accredited Qualification, Online)</p>
+                            </div>
+                            <div class="cv-edu-item reading">
+                                <h3>Diploma in Human Resources (HR) – Reading</h3>
+                                <p class="edu-meta">2026 – Present | Alison (CPD Accredited Qualification, Online)</p>
+                            </div>
+                            <div class="cv-edu-item completed-high">
+                                <h3>Diploma in Business Management (DiBM) – Completed</h3>
+                                <p class="edu-meta">2025 – 2026 | ESOFT Metro Campus, Colombo (Skills and Education Group Qualifications UK, RQF Level 3 Equivalent)</p>
+                            </div>
+                            <div class="cv-edu-item completed-high">
+                                <h3>Pearson BTEC Higher National Diploma (HND) in Computing – Software Engineering Pathway – Completed</h3>
+                                <p class="edu-meta">2023 – 2024 | ESOFT Metro Campus, Colombo (RQF Levels 4 & 5)</p>
+                            </div>
+                            <div class="cv-edu-item completed-high">
+                                <h3>Certificate in Information Technology (CiIT) – Completed</h3>
+                                <p class="edu-meta">2025 | ESOFT Metro Campus, Colombo (RQF Level 2 Equivalent)</p>
+                            </div>
+                            <div class="cv-edu-item completed-it">
+                                <h3>Diploma in Information Technology (DiTEC) – Completed</h3>
+                                <p class="edu-meta">2022 – 2023 | ESOFT Metro Campus, Colombo (Pearson Assured UK, RQF Level 3 Equivalent)</p>
+                            </div>
+                            <div class="cv-edu-item completed-it">
+                                <h3>Diploma in English (DiE) – Completed</h3>
+                                <p class="edu-meta">2022 – 2023 | ESOFT Metro Campus, Colombo</p>
+                            </div>
+                            <div class="cv-edu-item completed-it">
+                                <h3>Certificate in IT (CiT) – Completed</h3>
+                                <p class="edu-meta">2022 | ESOFT Metro Campus, Colombo (Pearson Assured UK)</p>
+                            </div>
+                            <div class="cv-edu-item completed-media">
+                                <h3>Certificate in Media – Completed</h3>
+                                <p class="edu-meta">2023 – 2024 | Institute of Digital Media and Journalism (IDMJ), Colombo</p>
+                            </div>
+                            <div class="cv-edu-item completed-media">
+                                <h3>Certificate in Journalism – Completed</h3>
+                                <p class="edu-meta">2023 – 2024 | Institute of Digital Media and Journalism (IDMJ), Colombo</p>
+                            </div>
+                            <div class="cv-edu-item completed-media">
+                                <h3>Certificate in Computer Graphics – Completed</h3>
+                                <p class="edu-meta">2022 | Younger Men's Muslim Association (YMMA), Colombo 10</p>
+                            </div>
+                            <div class="cv-edu-item completed-basics">
+                                <h3>Certificate in Computer Basics – Completed</h3>
+                                <p class="edu-meta">2019 | Younger Men's Muslim Association (YMMA), Colombo 10</p>
+                            </div>
+                            <div class="cv-edu-item completed-basics">
+                                <h3>Certificate in Maʿāriful Wahy (Understanding Divine Revelation) – Completed</h3>
+                                <p class="edu-meta">2016 – 2018 | Shabeer-ul Rashad Masjid, Colombo 10 (ACJU) | Award: Best Performer</p>
+                            </div>
+                            <div class="cv-edu-item completed-basics">
+                                <h3>School Education</h3>
+                                <p class="edu-meta">2010 – 2020 | St. John's College, Colombo 09 (G.C.E. O/L, subjects included Commerce, IT, Art)</p>
+                            </div>
+                            <div class="cv-edu-item postponed">
+                                <h3>Diploma in Japanese – Postponed</h3>
+                                <p class="edu-meta">2024 | Alison (CPD Accredited Qualification, Online)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAGE BREAK -->
+        <div class="page-break"></div>
+
+        <!-- PAGE 2 -->
+        <div class="cv-page-sheet" id="page-2">
+            <div class="cv-grid-p2">
+                
+                <div class="cv-section">
+                    <h2>Professional Experience</h2>
+                    
+                    <div class="experience-block">
+                        <div class="exp-header">
+                            <h3>Public Relations Director – Student Council</h3>
+                            <span class="exp-date">2024 – 2025</span>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Led public relations initiatives to enhance student engagement and campus communication.</li>
+                            <li>Managed event promotions, coordinated with student bodies, and designed visual materials.</li>
+                            <li>Facilitated collaboration between students, faculty, and external organizations.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-block">
+                        <div class="exp-header">
+                            <h3>Home Tutor – Information Technology Basics</h3>
+                            <span class="exp-date">2022 – 2024</span>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Conducted tutoring sessions on basic computing, productivity tools, and programming concepts.</li>
+                            <li>Customized learning plans for individual students to build confidence and practical skills.</li>
+                            <li>Evaluated student progress and adapted teaching techniques to various learning styles.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-block">
+                        <div class="exp-header">
+                            <h3>Freelance Photo Editor</h3>
+                            <span class="exp-date">2019 – Present</span>
+                        </div>
+                        <ul class="exp-bullets">
+                            <li>Provided professional photo retouching, color correction, and image enhancements for clients.</li>
+                            <li>Managed client communication, deadlines, and project deliverables independently.</li>
+                            <li>Built a portfolio demonstrating creativity and technical editing skills.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cv-section">
+                    <h2>Academic & Technical Projects</h2>
+                    
+                    <div class="project-block">
+                        <h3>Website Development & UX/UI Design Projects</h3>
+                        <ul class="proj-bullets">
+                            <li>Designed and developed responsive websites with a strong focus on usability, accessibility, and user experience.</li>
+                            <li>Created interactive web pages using HTML, CSS, JavaScript, PHP, and C#.</li>
+                            <li>Implemented database-driven functionality using MySQL and XAMPP environments.</li>
+                            <li>Developed intuitive navigation systems, structured layouts, and basic web applications to enhance user engagement.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-block">
+                        <h3>Digital Media Portfolio</h3>
+                        <ul class="proj-bullets">
+                            <li>Developed a comprehensive digital portfolio showcasing freelance photo editing, graphic design, and creative media projects.</li>
+                            <li>Demonstrated visual transformations through before-and-after comparisons and project case studies.</li>
+                            <li>Utilized the portfolio for academic presentations, professional networking, and client acquisition.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cv-section">
+                    <h2>Extracurricular Activities & Interests</h2>
+                    <div class="interests-tags">
+                        <span>Creative Design & Digital Art</span>
+                        <span>Public Speaking & Event Hosting</span>
+                        <span>Cultural & Modern Dance</span>
+                        <span>Travel & Exploration</span>
+                        <span>Drawing & Sketching</span>
+                        <span>Digital Content Creation</span>
+                    </div>
+                </div>
+
+                <div class="cv-section">
+                    <h2>Professional References</h2>
+                    <div class="refs-grid">
+                        <div class="ref-card">
+                            <h3>Mr. Rajitha Jayasekara</h3>
+                            <p>Lecturer – IT</p>
+                            <p class="ref-institution">ESOFT Metro Campus</p>
+                            <p class="ref-email">Email: rajithagayan@esoft.lk</p>
+                        </div>
+                        <div class="ref-card">
+                            <h3>Ms. Anne Sumudu</h3>
+                            <p>Senior Lecturer – IT</p>
+                            <p class="ref-institution">ESOFT UNI</p>
+                            <p class="ref-email">Email: anne@esu.lk</p>
+                        </div>
+                        <div class="ref-card">
+                            <h3>Ms. Chathuni Jayaweera</h3>
+                            <p>Lecturer – English</p>
+                            <p class="ref-institution">CINEC Campus</p>
+                            <p class="ref-email">LinkedIn: chathuni-jayaweera-9a47a6111</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-section declaration-section">
+                    <h2>Declaration</h2>
+                    <p class="dec-text">
+                        I hereby declare that the information provided in this Curriculum Vitae is true, accurate, and complete to the best of my knowledge and belief.
+                    </p>
+                    <div class="signature-block">
+                        <div class="sig-line">
+                            <span class="candidate-name">Mohammed Fatheen Faizal Fazly</span>
+                        </div>
+                        <div class="date-line">
+                            Date: <span id="cv-declaration-date">___________________</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="cv.js"></script>
+</body>
+</html>
